@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-class baseClass
+class baseClass final
 {
 public:
     virtual void perkenalan()
@@ -18,3 +18,12 @@ public:
         cout << "hallo sata function dari derived class";
     }
 };
+
+int main()
+{
+    derivedClass a;
+
+    a.perkenalan();
+
+    return 0;
+}
