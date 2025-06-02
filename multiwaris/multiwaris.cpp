@@ -41,6 +41,13 @@ public:
                       orang(pUmur) // hal ini dapat dilakukan juka menggunakan virtual
     {
         cout << "budi dibuat\n"
-             << endl;
+             << pUmur << endl;
     }
 };
+
+int main()
+{
+    budi a(12);
+
+    return 0;
+}
